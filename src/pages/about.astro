@@ -4,6 +4,6 @@ import astropodConfig from "../../.astropod/astropod.config.json";
 import { staticPath } from "../utils";
 ---
 
-<EpisodeLayout title="About" description={astropodConfig.description} cover={staticPath(astropodConfig.cover)}>
+<EpisodeLayout title="About" description={astropodConfig.description} cover={astropodConfig.cover}>
   {astropodConfig.description}
 </EpisodeLayout>
