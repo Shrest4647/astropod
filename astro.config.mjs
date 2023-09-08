@@ -13,6 +13,8 @@ import image from "@astrojs/image";
 // https://astro.build/config
 export default defineConfig({
   site: astropodConfig.site,
+  base: astropodConfig.base,
+  build: astropodConfig.build,
   integrations: [
     robotsTxt({
       policy: [

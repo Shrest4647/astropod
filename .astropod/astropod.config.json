@@ -7,17 +7,24 @@
   "banner": "/banner.webp",
   "pageSize": 15,
   "fundingUrl": "",
-  "owner": "",
+  "owner": "Sunil Shrestha",
   "favicon": "/favicon.svg",
   "explicit": false,
   "cover": "/cover.jpg",
   "language": "en",
-  "link": "https://your-website-url.netlify.app",
+  "link": "https://shrest4647.github.io/astropod",
   "email": "your.email@gmail.com",
   "description": "A short description of your podcast. We suggest creating a podcast description between 600-900 characters or 120-170 words in length.",
   "category": [
     "Technology",
     "Business"
   ],
-  "feedSize": ""
+  "feedSize": "",
+  "site": "https://shrest4647.github.io/astropod",
+  "base": "/astropod",
+  "rss": "https://shrest4647.github.io/astropod/rss.xml",
+  "sitemap": "https://shrest4647.github.io/astropod/sitemap.xml",
+  "build": {
+      "assetsPrefix": "https://sunilshrestha.me/astropod/"
+    }
 }
