@@ -6,6 +6,7 @@ import ListenOnMenu from "./listenOnMenu.astro";
 import FollowUsMenu from "./followUsMenu.astro";
 import RssIcon from "../icons/rssIcon.astro";
 import HeartIcon from "../icons/heartIcon.astro";
+import { staticPath } from "../../utils";
 
 const explicitLabel = explicit === undefined ? astropodConfig.explicit : explicit;
 let cover_url = cover ? cover : astropodConfig.cover;
@@ -14,7 +15,7 @@ let cover_url = cover ? cover : astropodConfig.cover;
 <div class="card min-w-full bg-base-100 shadow-md md:pb-3 w-full">
   <div class="aspect-[3/1] mt-5 w-full">
     <div class="relative inline-block w-full">
-      <img src={astropodConfig.banner} alt={astropodConfig.name + " banner"} class="object-cover w-full aspect-[3/1]" />
+      <img src={staticPath(astropodConfig.banner)} alt={astropodConfig.name + " banner"} class="object-cover w-full aspect-[3/1]" />
       <div
         class="absolute top-0 left-0 items-center justify-center w-full h-full bg-gradient-to-t from-gray-900 to-50% to-transparent"
       >
