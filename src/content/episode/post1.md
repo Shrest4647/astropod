@@ -4,7 +4,7 @@ audioUrl: https://ia800505.us.archive.org/15/items/astropod/1%20-%20Trailer%20wi
 pubDate: Sep 10 2022
 duration: 00:32
 size: 0.7
-cover: ""
+cover: "/cover.jpg"
 explicit: false
 episode: 1
 season: 1
