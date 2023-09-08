@@ -6,6 +6,7 @@ import AudioPlayer from "../../components/audioPlayer.astro";
 import PlainTextRenderer from "marked-plaintext";
 import { marked } from "marked";
 import astropodConfig from "../../../.astropod/astropod.config.json";
+import { staticPath } from "../../utils";
 
 export async function getStaticPaths() {
   const postEntries = await getCollection("episode");
@@ -33,7 +34,7 @@ const description = marked.parse(entry.body.slice(0, 500), { renderer: renderer 
   cover={episode.cover}
   explicit={episode.explicit}
   description={description}
-  cover={episode.cover}
+  cover={staticPath(episode.cover)}
 >
   <Content />
 </EpisodeLayout>

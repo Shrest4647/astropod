@@ -4,6 +4,7 @@ import Footer from "../components/Footer.astro";
 import astropodConfig from "../../.astropod/astropod.config.json";
 
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+import { staticPath } from "../utils";
 
 const { image, title = astropodConfig.name, description = astropodConfig.description } = Astro.props;
 ---
@@ -11,7 +12,7 @@ const { image, title = astropodConfig.name, description = astropodConfig.descrip
 <!DOCTYPE html>
 <html lang="en" data-theme={astropodConfig.theme}>
   <head>
-    <BaseHead title={title} description={description} image={image} />
+    <BaseHead title={title} description={description} image={staticPath(image)} />
   </head>
   <body class="bg-base-200 min-h-screen">
     <div class="container mx-auto lg:max-w-[960px]">

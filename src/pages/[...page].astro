@@ -8,6 +8,7 @@ import AudioPlayer from "../components/audioPlayer.astro";
 import PlainTextRenderer from "marked-plaintext";
 import { marked } from "marked";
 import Pagination from "../components/pagination.astro";
+import { staticPath } from "../utils";
 
 const renderer = new PlainTextRenderer();
 
@@ -29,7 +30,7 @@ const { page } = Astro.props;
           title={episode.data.title}
           cover={episode.data.cover}
           desc={marked.parse(episode.body.slice(0, 500), { renderer: renderer })}
-          url={"/episode/" + episode.slug}
+          url={staticPath("/episode/" + episode.slug)}
           audioUrl={episode.data.audioUrl}
           pubDate={episode.data.pubDate}
           duration={episode.data.duration}
